@@ -1,0 +1,331 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agencja Interaktywna dee-p</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="DEE-P">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!--    Define Icons and other SVGs-->
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+  <symbol id="icon-location" viewBox="0 0 32 32">
+  <title>location</title>
+  <path fill="#243473" style="fill: var(--color1, #243473)" d="M25.984 14.4l-7.616 16.128c-0.384 0.896-1.344 1.472-2.368 1.472s-1.984-0.576-2.368-1.472l-7.616-16.128c-0.512-1.152-0.704-2.432-0.704-3.712 0-5.888 4.8-10.688 10.688-10.688s10.688 4.8 10.688 10.688c0 1.28-0.192 2.56-0.704 3.712zM16 5.312c-2.944 0-5.312 2.368-5.312 5.312s2.368 5.376 5.312 5.376 5.312-2.368 5.312-5.312-2.368-5.376-5.312-5.376z"></path>
+  </symbol>
+  <symbol id="icon-mail" viewBox="0 0 32 32">
+  <title>mail</title>
+  <path fill="#243473" style="fill: var(--color1, #243473)" d="M28.928 11.968c-2.816 1.92-5.568 3.84-8.384 5.824-1.152 0.832-3.136 2.432-4.544 2.432v0 0c-1.472 0-3.392-1.664-4.544-2.432-2.752-1.92-5.568-3.904-8.32-5.824-1.28-0.832-3.072-2.88-3.072-4.48-0.064-1.728 0.896-3.264 2.816-3.264h26.304c1.536 0 2.88 1.28 2.88 2.88-0.064 1.984-1.536 3.776-3.136 4.864zM32 26.56c0 1.6-1.28 2.88-2.88 2.88h-26.24c-1.6 0-2.88-1.28-2.88-2.88v-14.208c0.512 0.576 1.152 1.088 1.792 1.536 2.944 2.048 5.952 4.032 8.896 6.144 1.472 1.088 3.328 2.496 5.312 2.496v0 0c1.92 0 3.776-1.344 5.312-2.496 2.88-2.112 5.888-4.16 8.896-6.144 0.64-0.448 1.28-0.96 1.792-1.536v14.208z"></path>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 32 32">
+  <title>phone</title>
+  <path fill="#243473" style="fill: var(--color1, #243473)" d="M31.232 28.352c-0.448 1.088-1.728 1.856-2.752 2.368-1.344 0.704-2.688 1.152-4.224 1.152-2.112 0-3.968-0.832-5.888-1.536-1.408-0.512-2.688-1.088-3.968-1.856-3.84-2.368-8.448-6.976-10.816-10.816-0.768-1.216-1.408-2.56-1.856-3.968-0.704-1.92-1.536-3.84-1.536-5.888 0-1.536 0.448-2.88 1.152-4.224 0.448-1.024 1.216-2.304 2.304-2.752 0.768-0.32 2.304-0.704 3.136-0.704 0.128 0 0.32 0 0.448 0.064 0.448 0.128 0.96 1.28 1.216 1.728 0.704 1.28 1.408 2.624 2.176 3.84 0.384 0.576 1.024 1.28 1.024 1.984 0 1.408-4.096 3.392-4.096 4.608 0 0.64 0.576 1.408 0.896 1.92 2.304 4.096 5.12 6.976 9.216 9.216 0.512 0.32 1.344 0.896 1.92 0.896 1.216 0 3.2-4.096 4.608-4.096 0.704 0 1.408 0.704 1.984 1.024 1.28 0.768 2.56 1.472 3.84 2.176 0.448 0.256 1.536 0.704 1.728 1.216 0.064 0.128 0.064 0.32 0.064 0.448 0.128 0.896-0.256 2.496-0.576 3.2z"></path>
+  </symbol>
+  <symbol id="icon-logo-dark" viewBox="0 0 48 32">
+  <title>logo-dark</title>
+  <path d="M37.381 32c-0.524 0-0.952-0.429-0.952-0.952v-15.238c0-3.19 2.381-5.81 5.524-5.81s5.667 2.667 5.667 5.857-2.571 5.81-5.714 5.81c-0.81 0-1.619-0.143-2.333-0.476-0.476-0.19-0.714-0.762-0.476-1.238 0.19-0.476 0.762-0.667 1.238-0.476 0.476 0.238 1 0.333 1.524 0.333 2.095 0 3.81-1.762 3.81-3.905s-1.571-4-3.667-4c-2.095 0-3.667 1.762-3.667 3.905v15.238c0 0.524-0.429 0.952-0.952 0.952z"></path>
+  <path d="M40.905 17.095h-6.905c-0.524 0-0.905-0.429-0.905-0.905v0c0-0.524 0.429-0.905 0.905-0.905h6.905c0.524 0 0.905 0.429 0.905 0.905v0c0 0.476-0.381 0.905-0.905 0.905z"></path>
+  <path d="M34.381 16.19c0 0.524-0.429 0.905-0.905 0.905h-3.81c-0.524 0-0.905-0.429-0.905-0.905v-0.048c0-0.524 0.429-0.905 0.905-0.905h3.81c0.476 0 0.905 0.381 0.905 0.952v0z"></path>
+  <path d="M5.857 21.952c-3.143 0-5.619-2.619-5.619-5.81s2.571-5.81 5.714-5.81c0.81 0 1.619 0.143 2.333 0.476 0.476 0.19 0.714 0.762 0.476 1.238-0.19 0.476-0.762 0.667-1.238 0.476-0.476-0.238-1-0.333-1.524-0.333-2.095 0-3.81 1.762-3.81 3.905s1.571 3.905 3.667 3.905 3.667-1.762 3.667-3.905v-15.143c0-0.524 0.429-0.952 0.952-0.952s0.952 0.429 0.952 0.952v15.238c-0.048 3.19-2.429 5.762-5.571 5.762z"></path>
+  <path d="M19.143 21.952c-3.143 0-5.714-2.619-5.714-5.81s2.571-5.81 5.714-5.81c0.476 0 0.952 0.048 1.429 0.19 0.524 0.143 0.81 0.667 0.667 1.143-0.143 0.524-0.667 0.81-1.143 0.667-0.286-0.095-0.619-0.143-0.952-0.143-2.095 0-3.81 1.762-3.81 3.905s1.714 3.905 3.81 3.905 3.81-1.762 3.81-3.905c0-0.524 0.429-0.952 0.952-0.952s0.952 0.429 0.952 0.952c0 3.286-2.571 5.857-5.714 5.857z"></path>
+  <path d="M28.667 21.952c-0.476 0-0.952-0.048-1.429-0.19-0.524-0.143-0.81-0.667-0.667-1.143 0.143-0.524 0.667-0.81 1.143-0.667 0.286 0.095 0.619 0.143 0.952 0.143 2.095 0 3.81-1.762 3.81-3.905s-1.714-3.905-3.81-3.905-3.81 1.762-3.81 3.905c0 0.524-0.429 0.952-0.952 0.952s-0.952-0.429-0.952-0.952c0-3.19 2.571-5.81 5.714-5.81s5.714 2.619 5.714 5.81-2.571 5.762-5.714 5.762z"></path>
+  <path d="M19.095 16.19c0 0.524-0.429 0.905-0.905 0.905h-3.762c-0.524 0-0.905-0.429-0.905-0.905v-0.048c0-0.524 0.429-0.905 0.905-0.905h3.762c0.476 0 0.905 0.381 0.905 0.952v0z"></path>
+  </symbol>
+  <symbol id="icon-contact" viewBox="0 0 32 32">
+  <title>contact</title>
+  <path fill="#cf1b5b" style="fill: var(--color2, #cf1b5b)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+  <path fill="#fff" style="fill: var(--color3, #fff)" d="M21.393 14.832c-0.18 0.207-0.385 0.389-0.602 0.547-1.005 0.71-2.016 1.426-2.997 2.167-0.506 0.39-1.132 0.867-1.788 0.867h-0.012c-0.656 0-1.282-0.477-1.788-0.867-0.981-0.747-1.992-1.457-2.991-2.167-0.223-0.157-0.427-0.339-0.608-0.547v4.987c0 0.553 0.433 1.005 0.963 1.005h8.86c0.53 0 0.963-0.452 0.963-1.005v-4.987zM21.393 12.985c0-0.553-0.439-1.005-0.963-1.005h-8.86c-0.644 0-0.963 0.527-0.963 1.143 0 0.572 0.608 1.281 1.035 1.583 0.933 0.678 1.878 1.357 2.811 2.042 0.391 0.283 1.053 0.86 1.541 0.86h0.012c0.488 0 1.149-0.578 1.541-0.86 0.933-0.685 1.878-1.363 2.817-2.042 0.53-0.383 1.029-1.018 1.029-1.721z"></path>
+  </symbol>
+  <symbol id="icon-logo" viewBox="0 0 32 32">
+  <title>logo</title>
+  <path fill="#c01f58" style="fill: var(--color4, #c01f58)" d="M22.558 16.491c-0.346 0-0.63 0.284-0.63 0.63v0.002c0 0.347 0.284 0.63 0.63 0.63h4.686c0.347 0 0.63-0.284 0.63-0.63v-0.002c0-0.347-0.284-0.63-0.63-0.63h-4.686z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M22.453 17.133c0 0.347-0.281 0.628-0.628 0.628h-2.579c-0.347 0-0.628-0.281-0.628-0.628v-0.022c0-0.347 0.281-0.628 0.628-0.628h2.579c0.347 0 0.628 0.281 0.628 0.628v0.022z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M3.829 21.113c-2.139 0-3.829-1.772-3.829-3.951s1.766-3.951 3.905-3.951c0.546 0 1.086 0.113 1.582 0.336 0.322 0.145 0.471 0.524 0.326 0.846s-0.52 0.465-0.843 0.32c-0.329-0.149-0.679-0.224-1.042-0.224-1.434 0-2.6 1.199-2.6 2.673s1.066 2.672 2.5 2.672c1.435 0 2.5-1.199 2.5-2.672v-7.977c0-0.353 0.286-0.639 0.639-0.639s0.639 0.286 0.639 0.639v7.977c0 2.178-1.639 3.951-3.779 3.951z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M12.776 21.073c-2.14 0-3.88-1.772-3.88-3.951s1.74-3.951 3.88-3.951c0.327 0 0.652 0.042 0.966 0.124 0.342 0.089 0.546 0.438 0.457 0.78s-0.44 0.546-0.78 0.457c-0.209-0.054-0.426-0.082-0.644-0.082-1.434 0-2.602 1.199-2.602 2.673s1.167 2.672 2.602 2.672 2.601-1.199 2.601-2.672c0-0.353 0.286-0.639 0.639-0.639s0.639 0.286 0.639 0.639c0 2.179-1.74 3.951-3.879 3.951z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M19.257 21.073c-0.33 0-0.657-0.042-0.974-0.125-0.341-0.090-0.545-0.439-0.455-0.781s0.441-0.545 0.781-0.456c0.21 0.056 0.428 0.084 0.648 0.084 1.434 0 2.601-1.199 2.601-2.672s-1.167-2.673-2.601-2.673c-1.435 0-2.601 1.199-2.601 2.673 0 0.353-0.286 0.639-0.639 0.639s-0.639-0.286-0.639-0.639c0-2.179 1.74-3.951 3.88-3.951s3.88 1.772 3.88 3.951-1.741 3.951-3.88 3.951z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M13.376 17.13c0 0.348-0.283 0.631-0.631 0.631h-2.573c-0.348 0-0.631-0.283-0.631-0.631v-0.017c0-0.348 0.283-0.631 0.631-0.631h2.573c0.348 0 0.631 0.282 0.631 0.631v0.017z"></path>
+  <path fill="#253572" style="fill: var(--color5, #253572)" d="M28.171 13.171c2.139 0 3.829 1.772 3.829 3.951s-1.766 3.951-3.905 3.951c-0.546 0-1.086-0.113-1.582-0.337-0.322-0.145-0.471-0.524-0.326-0.845s0.52-0.465 0.843-0.32c0.329 0.148 0.679 0.224 1.042 0.224 1.434 0 2.6-1.199 2.6-2.672s-1.066-2.673-2.5-2.673c-1.435 0-2.5 1.199-2.5 2.673v7.977c0 0.353-0.286 0.639-0.639 0.639s-0.639-0.286-0.639-0.639v-7.977c0-2.179 1.639-3.951 3.779-3.951z"></path>
+  </symbol>
+  <symbol id="icon-marketing" viewBox="0 0 32 32">
+  <title>marketing</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M26.678 6.454l-3.022-5.235c-0.551-0.954-1.933-1.211-3.051-0.565-1.808 3.953-5.158 9.958-11.294 13.501l-7.669 4.428c-1.406 0.812-1.99 2.458-1.297 3.657l1.511 2.618c0.692 1.2 2.41 1.517 3.816 0.705l1.949-1.125c0.652 3.713 3.428 5.347 5.755 7.238 2.139 0.31 6.246-2.097 6.276-4.332-2.347-0.154-4.423-0.428-4.209-2.641-1.876-0.371-2.315-2.644-0.729-4.288 5.773-2.805 11.956-2.685 15.965-2.31 1.117-0.645 1.587-1.971 1.036-2.925l-3.023-5.235c1.134-0.655 1.596-1.958 1.038-2.926s-1.918-1.219-3.053-0.564zM29.389 15.868c-5.744-0.319-10.676 0.474-14.955 2.436l-2.125-3.681c3.838-2.725 6.975-6.627 9.572-11.761l7.509 13.006z"></path>
+  </symbol>
+  <symbol id="icon-brush" viewBox="0 0 32 32">
+  <title>brush</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M28.838 2.348c-0.875 0-1.696 0.335-2.321 0.823l-11.392 8.822c-1.054 0.823-1.643 2.011-1.643 3.23 0 2.56 2.464 4.754 5.482 4.754 1.518 0 2.803-0.518 3.892-1.387 2.232-1.752 6.91-9.203 8.303-11.458 0.428-0.716 0.804-1.493 0.804-2.301 0-1.447-1.5-2.484-3.125-2.484zM12.607 18.103c-4.018 0.152-6.393 0.762-7.91 4.144-0.161 0.35-0.536 0.564-0.982 0.564-0.75 0-3.053-1.569-3.714-1.95 0 4.678 2.625 8.792 8.678 8.792 5.107 0 8.642-2.986 8.535-7.329l-0.018-1.082c-1.964-0.442-3.661-1.6-4.589-3.139z"></path>
+  </symbol>
+  <symbol id="icon-graph" viewBox="0 0 32 32">
+  <title>graph</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M9.999 16h-3.998v7.153h3.998v-7.153zM15.999 8.847h-3.998v14.307h3.998v-14.307zM31.999 24.941h-30v-19.671h-1.998v21.459h31.998v-1.788zM21.999 12.423h-3.998v10.73h3.998v-10.73zM27.999 7.059h-3.998v16.095h3.998v-16.095z"></path>
+  </symbol>
+  <symbol id="icon-monitor" viewBox="0 0 32 32">
+  <title>monitor</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M29.868 19.377c0 0.268-0.25 0.505-0.533 0.505h-26.669c-0.284 0-0.533-0.237-0.533-0.505v-13.128c0-0.268 0.25-0.505 0.533-0.505h26.669c0.284 0 0.533 0.236 0.533 0.505v13.128zM31.999 6.248c0-1.389-1.199-2.525-2.665-2.525h-26.669c-1.466 0-2.665 1.136-2.665 2.525v17.168c0 1.388 1.199 2.525 2.665 2.525h9.068c0 1.373-1.067 2.446-1.067 3.029 0 0.552 0.483 1.010 1.067 1.010h8.534c0.583 0 1.067-0.458 1.067-1.010s-1.067-1.688-1.067-3.029h9.068c1.466 0 2.665-1.136 2.665-2.525v-17.168z"></path>
+  </symbol>
+  <symbol id="icon-paperclip" viewBox="0 0 32 32">
+  <title>paperclip</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M31.908 25.483c0-1.707-0.84-3.355-2.27-4.557l-13.206-11.267c-0.887-0.776-2.114-1.221-3.387-1.221-2.5 0-4.452 1.668-4.452 3.801 0 1.067 0.522 2.133 1.43 2.89l9.318 7.951c0.137 0.116 0.318 0.194 0.5 0.194 0.477 0 1.773-1.105 1.773-1.513 0-0.155-0.091-0.31-0.227-0.427l-9.32-7.951c-0.341-0.31-0.568-0.717-0.568-1.144 0-0.756 0.659-1.299 1.523-1.299 0.5 0 1 0.175 1.364 0.466l13.207 11.267c0.864 0.737 1.432 1.745 1.432 2.812 0 1.648-1.432 2.87-3.364 2.87-1.228 0-2.432-0.485-3.296-1.222l-17.637-15.068c-1.092-0.931-1.728-2.191-1.728-3.51 0-2.734 2.501-4.964 5.73-4.964 1.544 0 3.020 0.582 4.111 1.493l13.775 11.771c0.136 0.116 0.318 0.194 0.523 0.194 0.477 0 1.75-1.086 1.75-1.493 0-0.155-0.091-0.31-0.227-0.427l-13.753-11.752c-1.659-1.396-3.886-2.191-6.202-2.191-4.82 0-8.614 3.277-8.614 7.388 0 1.959 0.954 3.859 2.566 5.255l17.66 15.048c1.409 1.202 3.341 1.939 5.342 1.939 3.546 0 6.248-2.308 6.248-5.333z"></path>
+  </symbol>
+  <symbol id="icon-presentation" viewBox="0 0 32 32">
+  <title>presentation</title>
+  <path fill="#cf1c5c" style="fill: var(--color6, #cf1c5c)" d="M17.52 24c-1.203-0.752-2.156-1.252-2.768-2.667h-10.752v-17.333h21.333v8h2.667v-8h1.333v-4h-29.333v4h1.333v20h16.187zM13.333 32h2.667v-5.333h-2.667v5.333zM17.14 26.667l4.559 5.333h3.504l-4.552-5.333h-3.511zM4.108 32h3.504l4.56-5.333h-3.51l-4.553 5.333zM10.32 14.164l-3.653 3.557 0.94 0.945 2.711-2.62 1.995 1.996 3.541-3.563-0.563-1.333-2.969 3.018-2.001-2zM18.129 21.244c0.877 0.547 3.64 2.066 6.46 5.423 2.549-1.041 4.989-2.036 7.411-3.023-1.099-2.696-0.265-4.201-1.357-6.878-0.747-1.827-1.379-2.004-2.591-2.067l0.383 0.944c0.233 0.57-0.627 0.915-0.856 0.351l-0.344-0.841c-0.279-0.685-1.174-0.511-1.957-0.515l0.465 1.143c0.231 0.565-0.625 0.917-0.856 0.349l-0.404-0.992c-0.287-0.7-1.22-0.499-2.011-0.484l0.493 1.209c0.233 0.572-0.628 0.915-0.856 0.352l-2.004-4.904c-0.623-1.524-2.985-0.62-2.341 0.957l2.956 7.245c-0.433-0.288-1.229-0.643-1.773-0.771-1.685-0.4-2.769 1.289-0.817 2.501zM17.436 8.133c0.448-0.184 0.909-0.209 1.335-0.108 0.907 0.216 1.643 0.997 1.704 2.025-0.301-0.369-0.699-0.608-1.133-0.711-0.437-0.104-0.913-0.068-1.365 0.116-0.899 0.367-1.457 1.219-1.369 2.172-0.992-1.137-0.576-2.921 0.829-3.494z"></path>
+  </symbol>
+  </defs>
+</svg>
+
+<!--    End Icons-->
+
+    <section id="header">
+      <div id="logo">
+          <svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>
+      </div>
+      <div id="contactButton">
+        <a href="#contact">
+        <svg class="icon icon-contact hvr-pulse-grow"><use xlink:href="#icon-contact"></use></svg>
+        </a>
+          </div>
+    </section>
+
+
+
+
+
+    <div id="banner">
+
+    <div id="bannerContents">
+          <h1>Kreatywne pomysły. </h1>
+          <h1>Nowoczesne rozwiązania.</h1>
+          <h1>Zaskakujące efekty.</h1>
+          <p>Rozumiemy internet i  jesteśmy specjalistami od rozwiązywania problemów. Jaki jest Twój?</p>
+
+</div>
+
+
+</div>
+
+
+<div id="container">
+
+<section id="latestRealisations">
+  <h1>Wybrane realizacje</h1>
+
+  <div id="portfolioList">
+    <div class="portfolioItem">
+    <a class="popupLink" href="pictures/p1.jpg"> <img src="pictures/t1.jpg" alt=""></a>
+    </div>
+
+    <div class="portfolioItem">
+      <a class="popupLink" href="pictures/p2.jpg"> <img src="pictures/t2.jpg" alt=""></a>
+    </div>
+
+    <div class="portfolioItem">
+    <a class="popupLink" href="pictures/p3.jpg"> <img src="pictures/t3.jpg" alt=""></a>
+    </div>
+
+    <div class="portfolioItem">
+  <a class="popupLink" href="pictures/p4.jpg"> <img src="pictures/t4.jpg" alt=""></a>
+    </div>
+
+    <div class="portfolioItem">
+    <a class="popupLink" href="pictures/p5.jpg"> <img src="pictures/t5.jpg" alt=""></a>
+    </div>
+
+    <div class="portfolioItem">
+    <a class="popupLink" href="pictures/p6.jpg"> <img src="pictures/t6.jpg" alt=""></a>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section id="services">
+  <h1>Co możemy dla Ciebie zrobić</h1>
+
+  <div id="servicesContainer">
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-monitor"><use xlink:href="#icon-monitor"></use></svg>
+
+
+      </div>
+      <h2>
+        Strony Internetowe
+      </h2>
+
+      <p>
+        Nowoczesne, Funkcjonalne i zaprojektowane specjalnie do Twoich potrzeb. Unikalny projekt i  optymalizacja dla wszystkich urządzeń w standardzie.
+      </p>
+
+    </div>
+
+
+
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-graph"><use xlink:href="#icon-graph"></use></svg>
+
+
+      </div>
+      <h2>
+  Marketing internetowy
+      </h2>
+
+      <p>
+        Znajdziemy najskuteczniejszy sposób by zamienić odwiedzających w Twoich stałych klientów. Stworzymy kreatywne kampanie, które pomogą Ci rozszerzyć Twój biznes.
+      </p>
+
+    </div>
+
+
+
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-brush"><use xlink:href="#icon-brush"></use></svg>
+
+
+      </div>
+      <h2>
+        Projektowanie aplikacji
+      </h2>
+
+      <p>
+      Zaprojektujemy Twoją aplikację mobilną lub internetową zgodnie z zasadami użyteczności i dostępności. Nie zapomnimy przy tym wyjątkowym i nowoczesnym stylu.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-paperclip"><use xlink:href="#icon-paperclip"></use></svg>
+
+
+      </div>
+      <h2>
+        Identyfikacja wizualna
+      </h2>
+
+      <p>
+        Stworzymy silną tożsamość Twojej marki, która będzie odwzorowywała Twoje wartości i pozwoli
+profesjonalnie zaprezentować Twoją firmę
+      </p>
+
+
+    </div>
+
+
+
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-marketing"><use xlink:href="#icon-marketing"></use></svg>
+
+
+      </div>
+      <h2>
+        Materiały reklamowe
+      </h2>
+
+      <p>
+        Nie ważne czy potrzebujesz ulotki, plakatu czy banneru reklamowego. Wszystkie materiały
+zaprojektujemy tak aby najlepiej zaprezentować Twoją ofertę.
+      </p>
+
+
+    </div>
+
+
+    <div class="service">
+      <div class="serviceIcon">
+        <svg class="icon icon-presentation"><use xlink:href="#icon-presentation"></use></svg>
+
+
+      </div>
+      <h2>
+        Prezentacje
+      </h2>
+
+      <p>
+        Kreatywnie zaprezentujemy nawet najnudniejsze dane. Pomożemy Ci stworzyć prezentację, która
+zainteresuje Twoich klientów i współpracowników.
+      </p>
+
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <aside>
+    <h1>Skontaktuj się z nami!</h1>
+    <p>Przedstaw nam swój pomysł lub problem a my zrobimy wszystko by znaleźć rozwiązanie.</p>
+  </aside>
+
+  <form method="POST" action="http://formspree.io/daniel.piasta@gmail.com">
+    <input type="text" name="ImieNazwisko" placeholder="Imię i Nazwisko">
+    <input type="email" name="Email" placeholder="Adres e-mail">
+    <textarea name="Wiadomosc" placeholder="Wiadomość"></textarea>
+    <input type="submit" value="wyślij">
+  </form>
+
+</section>
+</div>
+<!-- end of #CONTAINER;  -->
+<footer>
+<section id="contactInformations">
+    <div class="contactInfo"><p>Agencja interaktywna <b>dee-p</b></p></div>
+  <div class="contactInfo"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg><p class="location">Piotrków Trybunalski, ul. Sportowa 9a</p></div>
+  <div class="contactInfo"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><p class="phone">607762150</p></div>
+  <div class="contactInfo"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg><p class="emailAddress">kontakt@dee-p.pl</p></div>
+  <p class="copyInfo">Wszelkie prawa zastrzezone, Agencja interaktywna dee-p Daniel Piasta</p>
+</section>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+<script>
+$('.popupLink').magnificPopup({
+  type: 'image',
+  closeOnContentClick: true,
+  // retina: {
+  //   ratio: 2,
+  //
+  //
+  //   replaceSrc: function(item, ratio) {
+  //     return item.src.replace(/\.\w+$/, function(m) { return '@2x' + m; });
+  //   } // function that changes image source
+  // },
+  image: {
+    verticalFit: false
+  }
+  // other options
+});
+</script>
+</body>
+</html>
